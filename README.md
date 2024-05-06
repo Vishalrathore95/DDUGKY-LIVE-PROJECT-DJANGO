@@ -30,7 +30,7 @@ This website serves as the online platform for the Deen Dayal Upadhyaya Grameen 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
+https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO
     ```
 2. This project requires Django to be installed. Install Django using pip:
     ```bash
@@ -38,7 +38,7 @@ This website serves as the online platform for the Deen Dayal Upadhyaya Grameen 
     ```
 3. Navigate to the project directory and run the Django development server:
     ```bash
-    cd <project_directory>
+    cd ddu
     python manage.py runserver
     ```
 4. Open a web browser and go to http://localhost:8000/ to view the website.
