@@ -1,0 +1,119 @@
+#menuTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #menuTable th,
+  #menuTable td {
+    border: 1px solid hsl(253,42%,32%);
+    padding: 8px;
+    text-align: left;
+    font-size: 26px;
+  }
+  
+  #menuTable th {
+    background-color: hsl(253,42%,32%);
+    color: #fff;
+  }
+  
+  #menuTable tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  #menuTable tr:hover {
+    background-color: hsl(253,42%,32%);
+    color: #fff;
+  }
+  
+      #searchInput {
+     width: 95%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      border: 1px solid hsl(253,42%,32%);
+      border-radius: 10px;
+    }
+    h2 span {
+    font-size: 1.2em; 
+    font-weight: bold;
+    color:  hsl(253,42%,32%);
+    font-size: 50px;
+  }
+  h2 {
+      color: rgb(110,111,115);
+      font-size: 30px;
+  }
+
+  /* Style for the button */
+.button {
+  display: inline-block;
+  background-color: hsl(253,42%,32%);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+.button:hover {
+  background-color: rgb(110,111,115);
+}
+
+.button:active {
+  background-color: #8e573e;
+}
+
+@media only screen and (max-width: 767px) {
+  
+    #menuTable {
+        width: 100%;
+    }
+    #menuTable,
+    #menuTable th,
+    #menuTable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    #menuTable th,
+    #menuTable td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    #searchInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        border: 1px solid hsl(253, 42%, 32%);
+        border-radius: 10px;
+    }
+    h2 span {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: hsl(253, 42%, 32%);
+        font-size: 30px; 
+    }
+    h2 {
+        color: rgb(110, 111, 115);
+        font-size: 20px; 
+    }
+}
+
+.arrow-link {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change text color */
+}
+
+.arrow-link:hover {
+  color: #666; /* Change text color on hover */
+}
+
+.arrow-link i {
+  margin-right: 5px; /* Add space between icon and text */
+}

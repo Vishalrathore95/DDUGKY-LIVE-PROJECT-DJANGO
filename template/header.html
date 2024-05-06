@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDu GKY TRUBA BHOPAL</title>
+  
+  <link rel="stylesheet" href="/static/sty.css">
+  <link rel="stylesheet" href="/static/heade.css">
+  <link rel="stylesheet" href="/static/footer.css">
+  <link rel="stylesheet" href="/static/batches.css">
+  <link rel="stylesheet" href="/static/bi.css">
+  <link rel="stylesheet" href="/static/cantee.css">
+  <link rel="stylesheet" href="/static/click.css">
+  <link rel="stylesheet" href="/static/contact.css">
+  <link rel="stylesheet" href="/static/course.css">
+  <link rel="stylesheet" href="/static/placemen.css">
+  <link rel="stylesheet" href="/static/review.css">
+  <link rel="stylesheet" href="/static/teache.css">
+  <link rel="stylesheet" href="/static/ts.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Remove the script tag -->
+ 
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo"><img src="/static/image/DDU.jpg"></div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="menu-icon-line"></div>
+      <div class="menu-icon-line"></div>
+      <div class="menu-icon-line"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/index">Home</a></li>
+      <li><a href="/course">Courses</a></li>
+      <li><a href="/teacher">Teachers</a></li>
+      <li><a href="/batches">Batches</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="/canteen">Canteen</a></li>
+      <li><a href="/placement">Placement</a></li>
+      <!-- Ensure you replace the below with your actual logout URL or appropriate logic -->
+      <li><a href="{% url 'logout'%}">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>

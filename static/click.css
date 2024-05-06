@@ -1,0 +1,83 @@
+
+
+  /*NAV BAR START HERE*/
+ 
+  /* NAV BAR CLOSE HERE*/
+
+  .ddu-gky-section {
+    padding: 50px 30px;
+ 
+  }
+  
+  .ddu-gky-section h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    color:rgb(110,111,115);
+
+  }
+  .ddu-gky-section h1 span {
+    color:rgba(45, 45, 143, 0.87); 
+    font-size: 60px;
+
+    font-weight: bold;
+  }
+  
+  .ddu-gky-section p {
+    line-height: 1.6;
+    color:rgb(110,111,115);
+    font-size: 25px;
+
+
+  }
+  
+  .ddu-gky-section ul {
+    list-style-type: decimal;
+  }
+  
+  .ddu-gky-section ul li {
+    margin-bottom: 10px;
+    color:rgb(110,111,115);
+    font-size: 25px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .container1 {
+      width: 90%;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      text-align: center;
+      padding-top: 10px;
+    }
+  
+    .nav-links li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .nav-links li a {
+      font-size: 18px;
+    }
+  
+    .navbar {
+      padding-bottom: 10px;
+    }
+  }
+  .arrow-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change text color */
+  }
+  
+  .arrow-link:hover {
+    color: #666; /* Change text color on hover */
+  }
+  
+  .arrow-link i {
+    margin-right: 5px; /* Add space between icon and text */
+  }

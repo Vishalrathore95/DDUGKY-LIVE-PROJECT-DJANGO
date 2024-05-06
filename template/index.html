@@ -1,0 +1,59 @@
+{% include "header.html" %}
+
+
+
+<div id="carouselExampleControls" class="carousel slide w-100 mt-2" data-ride="carousel"  style="object-fit: cover;" >
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 300px;">
+        <img class="d-block w-100" src="/static/image/1 (1).jpg" alt="First slide" style="  height: 300px; ">
+      </div>
+      <div class="carousel-item" style="height: 300px;">
+        <img class="d-block w-100" src="/static/image/2 (1).jpeg" alt="Second slide" style="  height: 300px;">
+      </div>
+      <div class="carousel-item" style="height: 300px;">
+        <img class="d-block w-100" src="/static/image/3 (1).jpg" alt="Third slide" style="  height: 300px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <marquee behavior="scroll" direction="left" scrollamount="8" style="color: blue; background-color: cadetblue;" >
+      Deen Dayal Upadhyaya Grameen Kaushalya Yojana
+  </marquee>
+</div>
+<marquee behavior="scroll" direction="left" scrollamount="5" style="color:red;">
+  
+  Beware of fraudulent emails sent from non government domains. Please do not trust mails except from gov.in and nic.in domains.
+</marquee>
+  
+
+   
+
+<div>
+       
+  <p id="locationParagraph"> In Truba Group of Institutes Bhopal</p>
+<button onclick="getLocation()">Get Live Location</button>
+<span id="liveLocation"></span>
+ 
+</div>
+<section class="about-section">
+    <div>
+        <h2><span>A</span>bout <span>U</span>s</h2>
+        <p>The Ministry of Rural Development (MoRD) announced the Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY) on Antyodaya Diwas - 25th September 2014. DDU-GKY is a part of the National Rural Livelihood Mission (NRLM), tasked with the dual objectives of adding diversity to the incomes of rural poor families and cater to the career aspirations of rural youth..</p>
+
+
+        <p>DDU-GKY is uniquely focused on rural youth between the ages of 15 and 35 years from poor families. As a part of the Skill India campaign, it plays an instrumental role in supporting the social and economic programs of the government like the Make In India, Digital India, Smart Cities and Start-Up India, Stand-Up India campaigns. Over 180 million or 69% of the country's youth population between the ages of 18 and 34 years, live in its rural areas. Of these, the bottom of the pyramid youth from poor families with no or marginal employment number about 55 million.</p>
+
+
+        <p><a href="/about"> Click Here</a></p>
+    </div>
+</section>
+
+
+
+{% include "footer.html" %}

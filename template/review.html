@@ -1,0 +1,16 @@
+{% include "header.html" %}
+<a href="/canteen" class="arrow-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+<h2> Food Review</h2>
+
+<form action="{% url 'review' %}" method="post">
+    {%  csrf_token %}
+    <label for="review_message">Your Review:</label><br>
+    <textarea id="review_message" name="review_message" rows="4" cols="50" required></textarea><br><br>
+    
+    <label for="review_date">Date of Review:</label><br>
+    <input type="date" id="review_date" name="review_date" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+{% include "footer.html" %}

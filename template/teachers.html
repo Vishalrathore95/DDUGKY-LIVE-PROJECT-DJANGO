@@ -1,0 +1,36 @@
+{% include "header.html" %}
+<a href="/course" class="arrow-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+    <input type="text" id="searchInput" placeholder="Search teachers..." />
+
+    <div class="container4">
+      
+      {% for teacher in teachers %}
+    <div class="card">
+        <img src="{{ teacher.profile_image.url|default:'{% static "placeholder.png" %}' }}" alt="Profile Image" />
+        <h2>{{ teacher.name }}</h2>
+    </div>
+    {% endfor %}
+      
+    </div>
+    <script>
+
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.card');
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    cards.forEach(card => {
+      const teacherName = card.querySelector('h2').textContent.toLowerCase();
+      const shouldShow = teacherName.includes(searchTerm);
+
+      if (shouldShow) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+{% include "footer.html" %}

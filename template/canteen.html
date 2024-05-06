@@ -1,0 +1,63 @@
+{% include "header.html" %}
+<a href="/contact" class="arrow-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+<h2> <span>C</span>anteen <span>M</span>enu</h2>
+
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for menu items...">
+
+
+<table id="menuTable">
+    <tr>
+      <th>Day</th>
+      <th>Breakfast</th>
+      <th>Lunch</th>
+      <th>Tea</th>
+     
+      <th>Dinner</th>
+    </tr>
+    {% for item in menu_items %}
+    <tr>
+        <td>{{ item.day }}</td>
+        <td>{{ item.breakfast }}</td>
+        <td>{{ item.lunch }}</td>
+        <td>{{ item.tea }}</td>
+        <td>{{ item.dinner }}</td>
+    </tr>
+    {% endfor %}
+    
+  
+  </table>
+ 
+  <a href="/review">
+    <button class="button">Review</button>
+</a>
+
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const menuTable = document.getElementById('menuTable');
+    const rows = menuTable.querySelectorAll('tr');
+    
+    searchInput.addEventListener('input', function() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+    
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        let shouldShow = false;
+    
+        cells.forEach(cell => {
+          const cellContent = cell.textContent.toLowerCase();
+          if (cellContent.includes(searchTerm)) {
+            shouldShow = true;
+          }
+        });
+    
+        if (shouldShow) {
+          row.style.display = 'table-row';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+    </script>
+    
+    {% include "footer.html" %}

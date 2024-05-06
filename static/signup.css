@@ -1,0 +1,88 @@
+
+
+.container5 {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid hsl(253,42%,32%);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color:  rgb(110,111,115);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    width: 95%;
+    border: 1px solid hsl(253,42%,32%);
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color:hsl(253,42%,32%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(110,111,115);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:  rgb(110,111,115);
+}
+
+.login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login a {
+    color :hsl(253,42%,32%);
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+    .container5 {
+        max-width: calc(100% - 70px); 
+        margin: 10px 10px; 
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+        width: 90%;
+    }
+
+    label {
+        font-size: 85%; 
+    }
+}

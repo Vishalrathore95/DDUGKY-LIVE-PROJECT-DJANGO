@@ -1,0 +1,70 @@
+.container8 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .forgot-password-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container8 h2 {
+    margin-bottom: 20px;
+    color:  rgb(110, 111, 115);
+  }
+
+  input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: hsl(253, 42%, 32%);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(110, 111, 115);
+  }
+  @media only screen and (max-width: 767px) {
+    .container8{
+         width: 100%;
+ 
+    }
+    .forgot-password-form {
+      max-width: 80%;
+      padding: 10px;
+    }
+  
+    input[type="email"] {
+      width: calc(100% - 20px);
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  
+    input[type="submit"] {
+      padding: 8px;
+    }
+  }
+  

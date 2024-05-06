@@ -1,0 +1,50 @@
+{% include "header.html" %}
+<a href="/batches" class="arrow-link"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+    <input type="text" id="searchInput" placeholder="Search teachers..." />
+
+    <div class="container4">
+      {% for item in tsc %}
+      <div class="card">
+          <img src="{{ item.profile_image.url }}" alt="Profile Image">
+          <h2>{{ item.name }}</h2>
+          <p>Address: {{ item.address }}</p>
+          <p>Email: {{ item.email }}</p>
+          <p>Year: {{ item.year }}</p>
+          <p>Batch Name: {{ item.batch_name }}</p>
+      </div>
+      {% endfor %}
+  </div>
+  
+
+    <script>
+const searchInput = document.getElementById('searchInput');
+const cards = document.querySelectorAll('.card');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  cards.forEach(card => {
+    const teacherName = card.querySelector('h2').textContent.toLowerCase();
+    const teacherNumber = parseInt(card.dataset.teacherNumber);  
+    const universityYear = parseInt(card.dataset.universityYear); 
+    
+
+    const isNameMatch = teacherName.includes(searchTerm);
+    const isNumberMatch = !isNaN(searchTerm) && (teacherNumber === parseInt(searchTerm) || universityYear === parseInt(searchTerm));
+
+    const shouldShow = isNameMatch || isNumberMatch;
+
+    if (shouldShow) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+
+
+      </script>
+      
+
+ 
+      {% include "footer.html" %}

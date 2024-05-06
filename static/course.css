@@ -1,0 +1,84 @@
+
+main {
+    padding: 20px;
+}
+#searchInput {
+    width: 95%;
+     padding: 10px;
+     margin-bottom: 20px;
+     font-size: 20px;
+     border: 1px solid hsl(253,42%,32%);
+     border-radius: 10px;
+   }
+
+   h2 span {
+    font-weight: bold;
+    color: hsl(253,42%,32%);
+    font-size: 60px;
+
+}
+
+h2 {
+    color: rgb(110,111,115);
+  
+    font-size:50px ;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid rgb(110,111,115);
+    padding: 18px;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(110,111,115);
+    font-weight: bold;
+    font-style: italic;
+}
+
+th {
+    background-color: hsl(253,42%,32%);
+    color: #fff;
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    h2 span {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    th {
+        font-size: 20px;
+    }
+}
+.arrow-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change text color */
+  }
+  
+  .arrow-link:hover {
+    color: #666; /* Change text color on hover */
+  }
+  
+  .arrow-link i {
+    margin-right: 5px; /* Add space between icon and text */
+  }

@@ -1,0 +1,86 @@
+.container4 {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  #searchInput {
+   width: 95%;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 1px solid hsl(253,42%,32%);
+    border-radius: 10px;
+  }
+  .card {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid hsl(253,42%,32%);
+    border-radius: 8px;
+    transition: transform 0.2s ease; 
+ 
+  }
+  .card:hover {
+    transform: scale(1.1); 
+  }
+  .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+  }
+
+  .card h2 {
+    margin: 0;
+    color:  rgb(110,111,115);
+    font-size: 20px;
+  }
+
+  .card p {
+    margin: 5px 0;
+    font-size: 20px;
+    
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 60%;
+    }
+    
+    #searchInput {
+      font-size: 16px;
+      padding: 15px;
+      width: auto;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card p {
+      font-size: 16px;
+    }
+  }
+  .arrow-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change text color */
+  }
+  
+  .arrow-link:hover {
+    color: #666; /* Change text color on hover */
+  }
+  
+  .arrow-link i {
+    margin-right: 5px; /* Add space between icon and text */
+  }

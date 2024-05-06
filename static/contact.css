@@ -1,0 +1,108 @@
+
+.container3 {
+    width: 50%;
+    margin: 0 auto;
+}
+.container3 h2 span {
+    font-weight: bold;
+    color:  rgba(45, 45, 143, 0.87);
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+   color:  rgb(110,111,115);
+}
+
+
+form {
+    padding: 30px;
+    border: 1px solid rgba(45, 45, 143, 0.87);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:  rgb(110,111,115);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(45, 45, 143, 0.87);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(45, 45, 143, 0.87);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color:rgba(45, 45, 143, 0.87);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(110,111,115);
+}
+
+
+form > * {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .container3 {
+      width: 90%;
+  }
+
+  h2 {
+      font-size: 40px; 
+  }
+
+  form {
+      padding: 20px; 
+  }
+
+  label {
+      font-size: 18px; 
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+      padding: 8px; 
+  }
+
+  input[type="submit"] {
+      padding: 8px 16px; 
+  }
+}
+.arrow-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change text color */
+  }
+  
+  .arrow-link:hover {
+    color: #666; /* Change text color on hover */
+  }
+  
+  .arrow-link i {
+    margin-right: 5px; /* Add space between icon and text */
+  }
