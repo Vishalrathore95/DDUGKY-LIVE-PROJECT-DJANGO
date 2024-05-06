@@ -25,6 +25,7 @@ This website serves as the online platform for the Deen Dayal Upadhyaya Grameen 
 - **Placement Page**: Provides information about placement opportunities for students.
 - **Contact Us Page**: Contact details for further inquiries.
 - **Reviews Page**: Page for users to leave reviews and feedback.
+- - **User Authentication**: Implemented user authentication features including login, signup, and forgot password functionality using email.
 
 
 ## Installation
@@ -61,3 +62,22 @@ This project is licensed under the MIT License.
 
 ## Video Introduction
 For a video introduction to the DDU GKY TRUBA BHOPAL program, please watch this [video](video_link_here).
+
+
+https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/b9d2e314-1016-4f45-964e-27525f20ef2b
+
+
+https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/157b19f1-1ee8-4910-b89f-0cbc53f51143
+
+![3 (1)](https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/9af57260-a31f-4008-b4fe-467d73c4fe09)
+![2 (1)](https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/5e5c9161-0a9e-463a-8cca-884c36ff2ca9)
+![1 (1)](https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/9c230d37-929f-4ced-a978-27379b3c0440)
+
+
+https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/21e9cac9-0d5a-4f67-9dc1-6ca4e53b0d30
+
+
+
+https://github.com/Vishalrathore95/DDUGKY-LIVE-PROJECT-DJANGO/assets/138272471/9a0c4d97-2604-4d16-bcc0-50f5849dd8cd
+
+
